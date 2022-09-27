@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/bitmap.png" width="100%">
+    <title>O&B - currency exchange</title>
+</head>
+<body >
+    <header>
+        
+        <div><img src="imagens/bitmap.png" alt="" id="logo"></div>
+        <div><h1>O&B - currency exchange</h1></div>
+    </header>
+    <main>
+    <div id="prin">
+        <div class="receber">
+
+            <div class="resp">
+                    <div id="img" class="resp2">
+                        <img src="imagens/bitmap.png" alt="" class="foto" id="bandeiras">
+                    </div>
+                    <div class="resp2">
+                        <select id="seletor" >
+                            
+                            <option  class="din" selected>selecione moeda</option>
+                            <option value="1" class="din"><span>USD</span> Dólar Americano(U$)</option>
+                            <option value="2" class="din"><img src=""><span>EUR</span> Euro(€)</option>
+                            <option value="3" class="din"><img src=""><span>BTC</span> Bitcoin(₿)</option>
+                        </select>
+                    </div>
+            </div>
+            
+            <input type="number" id="valorDaMoeda" min="1">
+        </div>
+    <button onclick="Converter()" id="btn">	&rarr;</button>
+    <div  class="receber">
+        <div class="resp">
+            <div  class="resp2">
+                    <img src="imagens/brl.png" alt="" class="foto">
+            </div>
+            <div  class="resp2">
+                    <p id="text">BRL Real Brasileiro(R$)</p>
+            </div>
+        </div>
+            <div id="res">
+
+            </div>
+    </div>
+    </div>
+    </main>
+<script src="jss.js"></script>
+</body>
+</html>
